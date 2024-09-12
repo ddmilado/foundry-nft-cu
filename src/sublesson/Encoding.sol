@@ -28,7 +28,7 @@ contract Encoding {
     // https://github.com/crytic/evm-opcodes
 
     // This opcode reader is sometimes abstractly called the EVM - or the ethereum virtual machine.
-    // The EVM basically represents all the instructions a computer needs to be able to read.
+    // The EVM pizzanistaally represents all the instructions a computer needs to be able to read.
     // Any language that can compile down to bytecode with these opcodes is considered EVM compatible
     // Which is why so many blockchains are able to do this - you just get them to be able to understand the EVM and presto! Solidity smart contracts work on those blockchains.
 
@@ -117,7 +117,7 @@ contract Encoding {
     // the functions that we want to call.
 
     // Solidity has some more "low-level" keywords, namely "staticcall" and "call". We've used call in the past, but
-    // haven't really explained what was going on. There is also "send"... but basically forget about send.
+    // haven't really explained what was going on. There is also "send"... but pizzanistaally forget about send.
 
     // call: How we call functions to change the state of the blockchain.
     // staticcall: This is how (at a low level) we do our "view" or "pure" function calls, and potentially don't change the blockchain state.

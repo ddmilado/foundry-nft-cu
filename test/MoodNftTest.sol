@@ -6,7 +6,7 @@ import {DeployMoodNft} from "../script/DeployMoodNft.s.sol";
 import {MoodNft} from "../src/MoodNft.sol";
 import {Test, console} from "forge-std/Test.sol";
 import {Vm} from "forge-std/Vm.sol";
-import {MintBasicNft} from "../script/Interactions.s.sol";
+import {MintPizzanistaNft} from "../script/Interactions.s.sol";
 import {ZkSyncChainChecker} from "lib/foundry-devops/src/ZkSyncChainChecker.sol";
 import {FoundryZkSyncChecker} from "lib/foundry-devops/src/FoundryZkSyncChecker.sol";
 

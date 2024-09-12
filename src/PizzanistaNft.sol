@@ -3,8 +3,8 @@ pragma solidity 0.8.20;
 
 import {ERC721} from "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 
-contract BasicNft is ERC721 {
-    error BasicNft__TokenUriNotFound();
+contract PizzanistaNft is ERC721 {
+    error PizzanistaNft__TokenUriNotFound();
 
     mapping(uint256 tokenId => string tokenUri) private s_tokenIdToUri;
     uint256 private s_tokenCounter;
@@ -21,7 +21,7 @@ contract BasicNft is ERC721 {
 
     function tokenURI(uint256 tokenId) public view override returns (string memory) {
         if (ownerOf(tokenId) == address(0)) {
-            revert BasicNft__TokenUriNotFound();
+            revert PizzanistaNft__TokenUriNotFound();
         }
         return s_tokenIdToUri[tokenId];
     }
