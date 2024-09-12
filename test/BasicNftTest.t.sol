@@ -9,14 +9,14 @@ import {MintBasicNft} from "../script/Interactions.s.sol";
 import {ZkSyncChainChecker} from "lib/foundry-devops/src/ZkSyncChainChecker.sol";
 
 contract BasicNftTest is Test, ZkSyncChainChecker {
-    string constant NFT_NAME = "Dogie";
-    string constant NFT_SYMBOL = "DOG";
+    string constant NFT_NAME = "PIZZANISTA! $2 Tuesdays";
+    string constant NFT_SYMBOL = "PIZZA";
     BasicNft public basicNft;
     DeployBasicNft public deployer;
     address public deployerAddress;
 
     string public constant PUG_URI =
-        "ipfs://bafybeig37ioir76s7mg5oobetncojcm3c3hxasyd4rvid4jqhy4gkaheg4/?filename=0-PUG.json";
+        "https://ipfs.io/ipfs/QmfGZ1qrH9KaXbs1VemJxGVoBsBDR61ofNcUsUcRdtFUWk/?filename=PizzanistaTuesdays.json";
     address public constant USER = address(1);
 
     function setUp() public {

@@ -8,7 +8,7 @@ import {MoodNft} from "../src/MoodNft.sol";
 
 contract MintBasicNft is Script {
     string public constant PUG_URI =
-        "ipfs://bafybeig37ioir76s7mg5oobetncojcm3c3hxasyd4rvid4jqhy4gkaheg4/?filename=0-PUG.json";
+        "https://ipfs.io/ipfs/QmfGZ1qrH9KaXbs1VemJxGVoBsBDR61ofNcUsUcRdtFUWk/?filename=PizzanistaTuesdays.json";
 
     function run() external {
         address mostRecentlyDeployedBasicNft = DevOpsTools.get_most_recent_deployment("BasicNft", block.chainid);

@@ -9,7 +9,7 @@ contract BasicNft is ERC721 {
     mapping(uint256 tokenId => string tokenUri) private s_tokenIdToUri;
     uint256 private s_tokenCounter;
 
-    constructor() ERC721("Dogie", "DOG") {
+    constructor() ERC721("PIZZANISTA! $2 Tuesdays", "PIZZA") {
         s_tokenCounter = 0;
     }
 
